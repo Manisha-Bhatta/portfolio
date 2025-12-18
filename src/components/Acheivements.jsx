@@ -30,7 +30,7 @@ const achievements = [
         title: "Certificate of Excellence",
         issuer: "Webel- a govt. of West Bengal undertaking",
         year: "2024",
-        link: "file:///C:/Users/KIIT0001/Downloads/Webel%20certificate.pdf",
+        link: "/webel-certificate.pdf",
     },
 ];
 

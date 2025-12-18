@@ -18,7 +18,7 @@ export const AboutSection = () => {
                         I have 1+ year of continuous coding experience, working on academic and personal projects while actively strengthening my problem-solving skills. I have solved numerous DSA problems, built responsive web interfaces, and maintained strong academic results in Computer Science.
                     </p>
                     <p className="text-muted-foreground">
-                        I am a Computer Science undergraduate and aspiring software engineer with a strong foundation in data structures, algorithms, and web development. As a fresher, I bring high energy, adaptability, and a genuine passion for learning and building. I enjoy solving complex problems, writing clean and efficient code, and turning ideas into functional applications. I am actively seeking an opportunity where I can contribute meaningfully, grow under mentorship, and continuously improve as an engineer while delivering real value to the team.
+                        I am a 3rd year Computer Science Engineering Student and aspiring software engineer with a strong foundation in data structures, algorithms, and web development. As a fresher, I bring high energy, adaptability, and a genuine passion for learning and building. I enjoy solving complex problems, writing clean and efficient code, and turning ideas into functional applications. I am actively seeking an opportunity where I can contribute meaningfully, grow under mentorship, and continuously improve as an engineer while delivering real value to the team.
                     </p>
 
                     <div className="flex fel-col sm:flex-row gap-4 pt-4 justify-center">
