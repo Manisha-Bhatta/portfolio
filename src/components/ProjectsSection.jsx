@@ -5,8 +5,8 @@ const projects = [
         description:
             "A personal portfolio website built to showcase my skills, projects, and experience. Features smooth scrolling, responsive design, dark mode, and a clean UI to provide a professional online presence.",
         tags: ["React", "Tailwind CSS", "JavaScript"],
-        demoUrl: "https://your-portfolio-link.com", // add live link
-        githubUrl: "https://github.com/your-username/portfolio", // add repo
+        demoUrl: "https://portfolio-five-beryl-21.vercel.app/", // add live link
+        githubUrl: "https://github.com/Manisha-Bhatta/portfolio", // add repo
     },
     {
         id: 2,
