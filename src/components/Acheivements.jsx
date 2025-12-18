@@ -26,6 +26,12 @@ const achievements = [
         year: "2025",
         link: "https://d8it4huxumps7.cloudfront.net/lambda-pdfs/certificate-images/c262defc-4135-4ba0-878f-784da2796e44.pdf",
     },
+    {
+        title: "Certificate of Excellence",
+        issuer: "Webel- a govt. of West Bengal undertaking",
+        year: "2024",
+        link: "file:///C:/Users/KIIT0001/Downloads/Webel%20certificate.pdf",
+    },
 ];
 
 export const AchievementsSection = () => {
