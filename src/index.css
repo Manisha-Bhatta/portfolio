@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --primary: 250 47% 60%;
+  --primary-foreground: 210 40% 98%;
+}
+
+.dark {
+  --background: 222 47% 4%;
+  --foreground: 213 31% 91%;
+  --primary: 250 65% 65%;
+  --primary-foreground: 213 31% 91%;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Cosmic Button */
+.cosmic-button {
+  @apply px-6 py-2 rounded-full bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] font-medium transition-all duration-300 hover:scale-105 active:scale-95;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Star animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.star {
+  @apply absolute rounded-full bg-white;
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+}
+
+.meteor {
+  @apply absolute rounded-full bg-gradient-to-r from-white via-white to-transparent;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+  animation: meteor 5s linear infinite;
+}
+
+.meteor-real {
+  position: absolute;
+  animation: meteor-fall linear infinite;
+  pointer-events: none;
+}
+
+.meteor-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+  background: white;
+
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 1),
+    0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.meteor-tail {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0));
+
+  filter: blur(0.6px);
+}
+
+.meteor-fall {
+  position: absolute;
+  animation: meteor-fall linear infinite;
+  pointer-events: none;
+}
+
+.star,
+.meteor {
+  pointer-events: none;
+}
+
+.star-background {
+  pointer-events: none;
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(40vw, 130vh);
+    /* slight right drift */
+    opacity: 0;
+  }
+}
