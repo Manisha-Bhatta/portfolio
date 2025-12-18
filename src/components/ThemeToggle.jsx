@@ -5,24 +5,19 @@ export const ThemeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
-        const storedTheme = localStorage.getItem("theme");
-
-        if (storedTheme === "dark") {
-            document.documentElement.classList.add("dark");
-            setIsDarkMode(true);
-        } else {
-            document.documentElement.classList.remove("dark");
-            setIsDarkMode(false);
-        }
+        const isDark = document.documentElement.classList.contains("dark");
+        setIsDarkMode(isDark);
     }, []);
 
     const toggleTheme = () => {
-        if (document.documentElement.classList.contains("dark")) {
-            document.documentElement.classList.remove("dark");
+        const html = document.documentElement;
+
+        if (html.classList.contains("dark")) {
+            html.classList.remove("dark");
             localStorage.setItem("theme", "light");
             setIsDarkMode(false);
         } else {
-            document.documentElement.classList.add("dark");
+            html.classList.add("dark");
             localStorage.setItem("theme", "dark");
             setIsDarkMode(true);
         }
@@ -32,6 +27,7 @@ export const ThemeToggle = () => {
         <button
             onClick={toggleTheme}
             className="p-2 rounded-md border border-border bg-background/80 backdrop-blur hover:bg-background transition"
+            aria-label="Toggle Theme"
         >
             {isDarkMode ? (
                 <Sun className="h-5 w-5 text-yellow-400" />
@@ -41,3 +37,4 @@ export const ThemeToggle = () => {
         </button>
     );
 };
+
