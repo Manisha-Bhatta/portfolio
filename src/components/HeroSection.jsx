@@ -20,7 +20,7 @@ export const HeroSection = () => {
                     </span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I’m a Computer Science undergraduate with a strong passion for problem-solving, software development, and building meaningful digital experiences. I enjoy working at the intersection of logic and creativity—whether it’s solving DSA problems, developing interactive web applications, or exploring new technologies.
+                    I’m a 3rd year Computer Science Student with a strong passion for problem-solving, software development, and building meaningful digital experiences. I enjoy working at the intersection of logic and creativity—whether it’s solving DSA problems, developing interactive web applications, or exploring new technologies.
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
